@@ -1,0 +1,5 @@
+$('#account_setup_first_name').val('Richard')
+$('#account_setup_last_name').val('Scarrott')
+$('#address1').val('123 Fakestreet')
+$('#city').val('London')
+$('#zip').val('SW1W 0DT')
