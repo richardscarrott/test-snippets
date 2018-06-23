@@ -6,4 +6,6 @@ document.querySelectorAll('*').forEach((el) => {
 });
 
 // TODO: Find and destroy adblock blocker modals
+// https://www.washingtonpost.com/ '.adblocker-root'
+
 // TODO: Close cookie messages
