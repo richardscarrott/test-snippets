@@ -3,7 +3,7 @@ function goTo(url) {
 }
 
 function goToNext() {
-    const nextLink = $('link[rel=next]');
+    const nextLink = document.querySelector('link[rel=next]');
     if (!nextLink) {
         console.warn('Next link not found');
         return;
