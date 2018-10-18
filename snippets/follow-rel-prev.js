@@ -3,7 +3,7 @@ function goTo(url) {
 }
 
 function goToPrev() {
-    const prevLink = $('link[rel=prev]');
+    const prevLink = document.querySelector('link[rel=prev]');
     if (!prevLink) {
         console.warn('Prev link not found');
         return;
