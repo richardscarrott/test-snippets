@@ -4,7 +4,7 @@ const $$ = document.querySelectorAll.bind(document);
 // https://github.com/facebook/react/issues/11488#issuecomment-347775628
 const setValue = (input, value) => { 
   let lastValue = input.value;
-  input.value = 'test@test.co';
+  input.value = value;
   let event = new Event('input', { bubbles: true });
   // hack React15
   event.simulated = true;
