@@ -22,7 +22,5 @@ setValue($('input[name=shippingAddress\\.lastName]'), 'Shippington');
 setValue($('input[name=shippingAddress\\.line1]'), '20 Cooper Street');
 setValue($('input[name=shippingAddress\\.line2]'), '');
 setValue($('input[name=shippingAddress\\.city]'), 'New York');
-setValue($('input[name=shippingAddress\\.country]'), 'US');
-setValue($('input[name=shippingAddress\\.state]'), 'NY');
 setValue($('input[name=shippingAddress\\.postCode]'), '10003');
 setValue($('input[name=shippingAddress\\.phone]'), '076653297564');
