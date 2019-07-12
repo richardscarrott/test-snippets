@@ -77,7 +77,7 @@ var docCookies = {
 };
 var cookieName = 'x-parade-us-enabled';
 if (docCookies.hasItem(cookieName)) {
-    docCookies.removeItem(cookieName);
+    docCookies.removeItem(cookieName, '/');
     console.log('US Disabled');
 } else {
     docCookies.setItem(cookieName, true, maxAgeToGMT(Infinity), '/');
