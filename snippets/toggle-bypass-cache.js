@@ -75,7 +75,7 @@ var docCookies = {
     return aKeys;
   }
 };
-var cookieName = 'x-parade-bypass-cache';
+var cookieName = 'x-parade-cache-bypass';
 if (docCookies.hasItem(cookieName)) {
     docCookies.removeItem(cookieName, '/');
     console.log('Cache bypass disabled');
