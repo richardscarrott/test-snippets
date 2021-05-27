@@ -2,7 +2,12 @@ const $ = document.querySelector.bind(document);
 const $$ = document.querySelectorAll.bind(document);
 
 // https://github.com/facebook/react/issues/11488#issuecomment-347775628
-const setValue = (input, value) => { 
+const setValue = (selector, value) => {
+  const input = $(selector);
+  if (!input) {
+    console.warn(`Input not found: ${selector}`);
+    return;
+  }
   let lastValue = input.value;
   input.value = value;
   let event = new Event('input', { bubbles: true });
@@ -16,10 +21,10 @@ const setValue = (input, value) => {
   input.dispatchEvent(event);
 }
 
-setValue($('input[name=billingAddress\\.firstName]'), 'Billy');
-setValue($('input[name=billingAddress\\.lastName]'), 'Billington');
-setValue($('input[name=billingAddress\\.line1]'), '123 Billing Street');
-setValue($('input[name=billingAddress\\.line2]'), 'Billingville');
-setValue($('input[name=billingAddress\\.city]'), 'Billing-on-Sea');
-setValue($('input[name=billingAddress\\.postCode]'), 'SW19 2BB');
-setValue($('input[name=billingAddress\\.phone]'), '07654111111');
+setValue('input[name=billingAddress\\.firstName]', 'Billy');
+setValue('input[name=billingAddress\\.lastName]', 'Billington');
+setValue('input[name=billingAddress\\.line1]', '123 Billing Street');
+setValue('input[name=billingAddress\\.line2]', 'Billingville');
+setValue('input[name=billingAddress\\.city]', 'Billing-on-Sea');
+setValue('input[name=billingAddress\\.postCode]', 'SW19 2BB');
+setValue('input[name=billingAddress\\.phone]', '07654111111');
