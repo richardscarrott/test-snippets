@@ -21,11 +21,22 @@ const setValue = (selector, value) => {
   input.dispatchEvent(event);
 }
 
-setValue('input[name=email]', 'richard.scarrott@paradeworld.co');
-setValue('input[name=shippingAddress\\.firstName]', 'Shippy');
-setValue('input[name=shippingAddress\\.lastName]', 'Shippington');
-setValue('input[name=shippingAddress\\.line1]', '20 Cooper Street');
-setValue('input[name=shippingAddress\\.line2]', '');
-setValue('input[name=shippingAddress\\.city]', 'New York');
-setValue('input[name=shippingAddress\\.postCode]', '10003');
-setValue('input[name=shippingAddress\\.phone]', '076653297564');
+if (Math.random() < 0.5) {
+  setValue('input[name=email]', 'richard.scarrott@paradeworld.co');
+  setValue('input[name=shippingAddress\\.firstName]', 'Shippy');
+  setValue('input[name=shippingAddress\\.lastName]', 'Shippington');
+  setValue('input[name=shippingAddress\\.line1]', '20 Cooper Street');
+  setValue('input[name=shippingAddress\\.line2]', '');
+  setValue('input[name=shippingAddress\\.city]', 'New York');
+  setValue('input[name=shippingAddress\\.postCode]', '10003');
+  setValue('input[name=shippingAddress\\.phone]', '076653297564');
+} else {
+  setValue('input[name=email]', 'richard.scarrott@paradeworld.co');
+  setValue('input[name=shippingAddress\\.firstName]', 'Shippy');
+  setValue('input[name=shippingAddress\\.lastName]', 'Shippington');
+  setValue('input[name=shippingAddress\\.line1]', '20 Cooper Street');
+  setValue('input[name=shippingAddress\\.line2]', '');
+  setValue('input[name=shippingAddress\\.city]', 'New York');
+  setValue('input[name=shippingAddress\\.postCode]', '10003');
+  setValue('input[name=shippingAddress\\.phone]', '076653297564');
+}
